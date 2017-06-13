@@ -6,7 +6,7 @@ class AddPlayer extends Component{
     render(){
         return(
             <div className='add_form'>
-                <input />
+                <input onChange={ (e) => this.props.updateInput(e.target.value) }/>
                 <button onClick={ this.props.add }>Add</button>
              </div>
         )

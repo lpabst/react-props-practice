@@ -18,10 +18,13 @@ class App extends Component {
     }
 
     this.addPlayer = this.addPlayer.bind(this);
+    this.updateUserInput = this.updateUserInput.bind(this);
   }
 
-  updateUserInput(){
-    
+  updateUserInput(val){
+    this.setState({
+      userInput: val
+    })
   }
 
   addPlayer(){
@@ -44,7 +47,8 @@ class App extends Component {
           <button>T2</button>
         </div>
 
-      <AddPlayer add={ this.addPlayer }/>
+      <AddPlayer add={ this.addPlayer }
+                 updateInput={ this.updateUserInput }/>
 
       <div className='lists'>
         <TeamList teamRoster={ this.state.team1 } />
