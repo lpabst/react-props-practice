@@ -1,0 +1,24 @@
+
+.App {
+  text-align: center;
+}
+
+button{
+  margin: 5px 5px 5px 5px;
+}
+
+.lists{
+  width: 20%;
+  position: absolute;
+  left: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul{
+    padding: 5px 15px 5px 15px;
+}
+
+#bob{
+  border: 2px solid black;
+}
